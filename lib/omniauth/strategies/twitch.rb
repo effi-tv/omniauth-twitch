@@ -18,7 +18,7 @@ module OmniAuth
         param_name: "access_token"
       }
 
-      option :authorize_options, [:scope]
+      option :authorize_options, [:scope, :force_verify]
 
       def request_phase
         redirect client.auth_code.
